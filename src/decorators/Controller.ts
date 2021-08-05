@@ -7,7 +7,7 @@ export interface Routes {
 }
 
 export interface Metadata {
-  prefix: string,
+  prefix?: string,
   routes: Routes[]
 }
 

@@ -1,3 +1,4 @@
+export { Header } from './Header.ts';
 export { Injectable } from './Injectable.ts';
 export { Module } from './Module.ts';
 export { Put } from "./Put.ts";

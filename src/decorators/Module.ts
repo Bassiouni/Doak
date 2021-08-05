@@ -1,7 +1,11 @@
-export function Module(_config: {
-  imports?: any[],
-  controllers: any[],
-  providers: any[],
-}) {
-  return (target: any) => { }
+interface ModuleConfig {
+  imports?: any[];
+  controllers: any[];
+  providers: any[];
+}
+
+export function Module(config: ModuleConfig) {
+  return (target: any) => {
+    Reflect.set(target, 'config', config);
+  }
 }
